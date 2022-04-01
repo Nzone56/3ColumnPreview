@@ -50,7 +50,8 @@ body{
     p{  
         font-size: 1.5rem;
         line-height: 2.5rem;
-        margin: 10% 20% 0% 15%;
+        //margin: 10% 20% 0% 15%;
+        margin: 10% 25% 15% 15%;
         font-weight: 400;
         color:$Transparent-white;
 
@@ -63,18 +64,24 @@ body{
         font-size: 1.7rem;
         border-radius: 50px;
         padding: 5% 13%;
-        margin: 12.5% 15%;
+        //margin: 12.5% 15%;
+        margin: 15%;
         font-weight: 700;
         font-family: 'Lexend Deca', sans-serif;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: transparent;
+        color:$Very-light-gray;
+        //border: 2px solid $Very-light-gray
+        box-shadow: inset 0 0 0 2px $Very-light-gray;
     }
     &__img{
         width: 100%;
-        
     }
     &__card1{
         width: 35rem;
         background-color: $Bright-orange;
-        @include flexbox();
         button{
             color:$Bright-orange;
         }
@@ -82,7 +89,6 @@ body{
     &__card2{
         width: 35rem;
         background-color: $Dark-cyan;
-        @include flexbox();
         button{
             color:$Dark-cyan;
         }
@@ -91,11 +97,11 @@ body{
     &__card3{
         width: 35rem;
         background-color: $Very-dark-cyan;
-        @include flexbox();
         button{
             color:$Very-dark-cyan;
         }
     }
+    
 }
 .attribution { 
     font-size: 11px; 
